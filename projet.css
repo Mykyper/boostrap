@@ -1,0 +1,26 @@
+.container-fluid{
+    background-color: rgb(48, 55, 67);
+    border: 10px;
+    border-color: aliceblue;
+}
+.navbar-brand{
+    color: aliceblue;
+    border-radius: 1%;
+    border-color: aliceblue;
+}
+.nav-link{
+    color:   aliceblue;
+}
+.navbar-nav{
+    border: 0.5px solid;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+.nav-item:hover{
+    background-color:#888;
+    border: 0.5px solid;
+    border-radius: 10px;
+}
+.bi{
+    color: white;
+}
