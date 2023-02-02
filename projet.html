@@ -2,53 +2,325 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="projet.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="projet.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Strongly type</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Desktop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tablet</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tablet portrait</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Mobile</a>
-              </li>
-              <li class="nav-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
-                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
-                  </svg>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+  <!-- première navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Strongly type</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Desktop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tablet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tablet portrait</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mobile</a>
+          </li>
+          <li class="nav-item" style="padding-left: 15px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z" />
+              <path fill-rule="evenodd"
+                d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z" />
+            </svg>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- deuxième navbar -->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-fill"
+          viewBox="0 0 16 16"
+          style="color: rgb(237, 237, 237);border-radius: 50%;background-color:rgb(136, 130, 134);background-size:cover">
+          <path
+            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+          <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+        </svg>
+        <a href=""> INTRODUCTION</a>
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+          class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16"
+          style="color: rgb(237, 237, 237);border-radius: 50%;background-color:rgb(136, 130, 134);background-size:contain">
+          <path
+            d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z" />
+        </svg>
+        <a href="">DROPDOWN</a>
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gear"
+          viewBox="0 0 16 16"
+          style="color: rgb(237, 237, 237);border-radius: 50%;background-color:rgb(136, 130, 134);background-size:contain">
+          <path
+            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+          <path
+            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+        </svg>
+        <a href="">LEFT SIDEBAR</a>
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-repeat"
+          viewBox="0 0 16 16"
+          style="color: rgb(237, 237, 237);border-radius: 50%;background-color:rgb(136, 130, 134);background-size:contain">
+          <path
+            d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
+        </svg>
+        <a href="">RIGHT SIDEBAR</a>
+      </div>
+      <div class="col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-diagram-3-fill"
+          viewBox="0 0 16 16"
+          style="color: rgb(237, 237, 237);border-radius: 50%;background-color:rgb(136, 130, 134);background-size:contain">
+          <path fill-rule="evenodd"
+            d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5v-1zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1z" />
+        </svg>
+        <a href="">NO SIDEBAR</a>
+      </div>
+    </div>
+  </div>
+  <!-- STRONGLY TYPE -->
+  <strong>
+    <h1 style="font-family:'Courier New';text-align: center;margin-top: 20px;color: rgb(236, 119, 105);">
+      <strong></strong>STRONGLY TYPE
+  </strong></h1>
+  <hr>
+  <hr>
+  <h2 style="font-family:'Courier New';text-align: center;margin-top: 20px;color:rgb(124, 123, 130);">GENTLEMEN, BEHOLD!
+    THIS IS <span><strong>STRONGLY TYPED!</strong></span></h2>
+  <!-- colonne des 3 images -->
+  <div class="container text-center">
+    <div class="row" style="margin-top: 100px;">
+      <div class="col">
+        <img src="RESSOURCES POUR PROJET BOOTSTRAP/pic01.jpg" alt="">
+        <br>
+        <h4 style="color:rgb(124, 123, 130)"><strong>OKAY SO WHAT IS
+            IT</strong></h4>
+        <p style="color:rgb(124, 123, 130)">This is <span><strong>Strongly Typed</strong></span>, a free, fully
+          responsive site
+          template by HTML5 UP. Free for persona! and
+          commercial use under the CCA 3.0 license. </p>
+      </div>
+      <div class="col">
+        <img src="RESSOURCES POUR PROJET BOOTSTRAP/pic02.jpg" alt="">
+        <br>
+        <h4 style="color:rgb(124, 123, 130)"><strong>NICE! WHAT IS HTML5
+            UP? </strong></h4>
+        <p style="color:rgb(124, 123, 130)">HTML5 UP is a side project of AJ's (= me). started it as
+          a wayto both test my responsive tools and sharpen
+          up my coding and design ski lis a bit </p>
+      </div>
+      <div class="col">
+        <img src="RESSOURCES POUR PROJET BOOTSTRAP/pic03.jpg" alt="">
+        <br>
+        <h4 style="color:rgb(124, 123, 130)"><strong>WHAT'S THIS BUILT
+            WITH?</strong></h4>
+        <p style="color:rgb(124, 123, 130)"> <strong>Responsive Tools</strong> is a simple set of tools for building
+          responsive sites and apps. Ail of my templates at
+          HTML5 UP are built using these tools. </p>
+      </div>
+    </div>
+  </div>
+  <!-- bouton "TELL ME MORE" -->
+  <button type="button" class="btn btn-danger" style="background-color: rgb(237, 119, 105);margin-left: 45%;;"><svg
+      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-fill"
+      viewBox="0 0 16 16">
+      <path
+        d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+    </svg> TELL ME MORE</button>
+    <br><br>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="RESSOURCES POUR PROJET BOOTSTRAP/banner.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="RESSOURCES POUR PROJET BOOTSTRAP/banner.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="RESSOURCES POUR PROJET BOOTSTRAP/banner.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br> <br>
+  <div class="container text-center">
+    <div class="row">
+      <!-- Côté gauche -->
+      <div class="col-lg-8 col-md-12 col-sm-12">
+        <h2 style="float: left;">I DON'T WANT TO SAY <strong>IT'S THE ALIENS </strong>... <br>
+          BUT IT'S THE ALIENS.</h2>
+        <img src="RESSOURCES POUR PROJET BOOTSTRAP/pic04.jpg" alt=""> <br>
+        <h5 style="float: left;margin-left: 28px;margin-top: 80px;"> <strong> I MEAN IS IT POSSIBLE ? </strong></h5>
+        <br>
+        <br>
+        <br> <br><br> <br><br>
+        <p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis
+          tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
+          tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros lorem sed tempus
+          aliquam lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id justo
+          mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit
+          amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
+        <button type="button" class="btn btn-danger" style="background-color: rgb(237, 119, 105);float: left;"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+            <path
+              d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+          </svg> CONTINUE READING</button> <br> <br> <br>
+        <hr>
+        <hr>
+        <h2 style="float: left;">BY THE WAY, MANY THANKS TO <strong> REGULARJANE</strong> FOR THESE AWESOME DEMO PHOTOS
+        </h2>
+        <img src="RESSOURCES POUR PROJET BOOTSTRAP/pic05.jpg" alt=""> <br>
+        <h5 style="float: left;margin-left: 28px;margin-top: 80px;"> <strong> YOU SHOULD PROBABLY CHECK OUT HER WORK
+          </strong></h5>
+        <br>
+        <br>
+        <br> <br><br> <br><br>
+        <p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis
+          tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
+          tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat consequat magna tempus lorem ipsum
+          consequat Phasellus laoreet massa id in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed
+          consequat magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat magna tempus lorem
+          ipsum consequat Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit
+          amet mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo nibh, rutrum
+          malesuada.</p>
+        <button type="button" class="btn btn-danger" style="background-color: rgb(237, 119, 105);float: left;"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+            <path
+              d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+          </svg> CONTINUE READING</button> <br> <br> <br>
+      </div>
+      <!-- côté droit -->
+      <div class="col-lg-4 sdd col-sm-12"> <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              JULY 30
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h5 style="float: left;">JUST ANOTHER POST</h5>
+                <br> <br> <br>
+                <p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci lorem ipsum
+                  sed magna consequat feugiat lorem dolore.</p>
+            </div>
           </div>
         </div>
-      </nav>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              JULY 28
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h5 style="float: left;">AND ANOTHER POST</h5>
+                <br> <br> <br>
+                <p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci lorem ipsum
+                  sed magna consequat feugiat lorem dolore.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             JULY 24
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h5 style="float: left;">ONE MORE POST</h5>
+                <br> <br> <br>
+                <p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci lorem ipsum
+                  sed magna consequat feugiat lorem dolore.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <br> <br>
+      <hr> <hr>
+        <br> <br> <br>
+        <div class="clearfix">
+          <img src="RESSOURCES POUR PROJET BOOTSTRAP/pic06.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+          <p>
+            Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis
+            tortor congue magna lorem ipsum dolor et quisque ut odio facilisis convallis. Etiam non nunc vel est
+            suscipit convallis non id orci. Ut interdum tempus facilisis convallis. Etiam non nunc vel est suscipit
+            convallis non id orci
+          </p>
+        </div>
+        <button type="button" class="btn btn-danger" style="background-color: rgb(237, 119, 105);float: left;"><svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+            <path
+              d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+          </svg> LEARN MORE</button> <br> <br>
+        <div class="clearfix">
+          <hr>
+          <br>
+          <h5 style="float: left;">SOMETHING OF LESS NOTE</h5>
+          <br> <br> <br>
+          <img src="RESSOURCES POUR PROJET BOOTSTRAP/pic07.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+          <p>
+            Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet mollis
+            tortor congue magna lorem ipsum dolor et quisque ut odio facilisis convallis. Etiam non nunc vel est
+            suscipit convallis non id orci. Ut interdum tempus facilisis convallis. Etiam non nunc vel est suscipit
+            convallis non id orci
+          </p>
+        </div>
+        <button type="button" class="btn btn-danger" style="background-color: rgb(237, 119, 105);float: left;"><svg
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-file-earmark-fill" viewBox="0 0 16 16">
+          <path
+            d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3z" />
+        </svg> LEARN MORE</button>
+      </div>
+
+    </div>
 </body>
 
 </html>
