@@ -40,3 +40,8 @@ a:hover{
 img:hover {
     transform: scale(1.1);
   }
+footer{
+ background-color: rgb(241, 241, 241);
+ background-size:100%;
+ justify-content: space-between;
+  }
