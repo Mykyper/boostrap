@@ -1,3 +1,4 @@
+/* Première navbar */
 .container-fluid{
     background-color: rgb(48, 55, 67);
     border: 10px;
@@ -29,6 +30,7 @@
 svg:hover{
 background-color: rgb(236, 119, 105);
 }
+/* lien des svg */
 a{
     text-decoration: none;
     color: #888;
@@ -36,12 +38,15 @@ a{
 a:hover{
     color:rgb(236, 119, 105) ;
 }
-
+/* zoom image */
 img:hover {
     transform: scale(1.1);
   }
+  /* pied de page */
 footer{
  background-color: rgb(241, 241, 241);
  background-size:100%;
  justify-content: space-between;
+ color: #888;
   }
+  /* des surcharges ont été faites dans le code html */
