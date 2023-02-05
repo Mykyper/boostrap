@@ -45,8 +45,8 @@ img:hover {
   /* pied de page */
 footer{
  background-color: rgb(241, 241, 241);
- background-size:100%;
- justify-content: space-between;
+ background-size:cover;
+ /* justify-content: space-between; */
  color: #888;
   }
   /* des surcharges ont été faites dans le code html */
